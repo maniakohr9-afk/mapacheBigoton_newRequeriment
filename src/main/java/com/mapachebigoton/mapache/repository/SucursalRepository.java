@@ -12,7 +12,7 @@ import com.mapachebigoton.mapache.model.Sucursal;
 
 @Repository
 public interface SucursalRepository extends JpaRepository<Sucursal, Long>{
-    List<Sucursal> findAllActivotrue();
+    List<Sucursal> findByActivoTrue();
 
     Optional<Sucursal> findByNombre(String nombre);
 
